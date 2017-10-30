@@ -14,9 +14,14 @@ public class SumOfTwo {
 
 	public static void main(String[] args) {
 
-		int[] arr = {4,3,8,5,3,4,5,7,7,4,7,90,8,5,3,};
+		int[] arr = {4,3,5,5,3,4,5,7,7,4,7,90,8,5,3,};
 		System.out.println(Arrays.toString(twoSum( arr, 98 )));
 		
+	/*	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		Date today = Calendar.getInstance().getTime();
+		String reportDate = sdf.format(today);
+		
+		System.out.println(reportDate);*/
 
 	}
 
@@ -25,7 +30,7 @@ public static int[] twoSum(int[] numbers, int target) {
         HashMap<Integer,Integer> hash = new HashMap<Integer,Integer>();
         for(int i = 0; i < numbers.length; i++){
 
-            Integer diff = (Integer)(target - numbers[i]);
+            Integer diff = (target - numbers[i]);
             if(hash.containsKey(diff)){
                 int toReturn[] = {hash.get(diff)+1, i+1};
                 return toReturn;

@@ -11,6 +11,7 @@ public class ReverseNumber {
 		
 		System.out.println(reverseNumber(num));
 		sc.close();
+		
 	}
 
 	private static int reverseNumber(int num) {
@@ -18,7 +19,7 @@ public class ReverseNumber {
 		int rem;
 		int sum =0;
 		
-		while(q>0)
+		while(q!=0)
 		{
 			rem = q%10;
 			q=q/10;
