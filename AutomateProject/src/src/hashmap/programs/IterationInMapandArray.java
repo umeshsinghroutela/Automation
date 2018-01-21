@@ -1,4 +1,4 @@
-package src.practice.programe;
+package src.hashmap.programs;
 
 import java.util.Arrays;
 
